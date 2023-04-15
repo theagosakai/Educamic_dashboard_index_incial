@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+#nav-checkbox, .nav-toggle{
+    display: none;
+}
+
+.hero{
+width: 100%;
+height: 100vh;
+background-image: url(fundo.png);
+background-size: cover;
+background-position: center;
+overflow: hidden; 
+}
+
+.content{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-80%);
+    z-index: 2;
+}
+
+h1{
+    font-size: 80px;
+    margin: 10px;
+    line-height: 80px;
+}
+
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 20px 0;
+   transition: background-color 0.5s ease;
+}
+
+.logo h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.nav-menu li{
+    display: inline-block;
+}
+
+.nav-menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0 15px;
+}
+
+
+.nav-menu li a:hover{
+    color: #cc0000;
+}
+
+.active{
+    background: #000;
+}
+
+.active a:hover{
+    color: #fff !important;
+}
+
+@media only screen and (max-width: 600px){
+    header{
+       display: block;
+    }
+
+    .logo{
+        margin-left: 50px;
+        width: 100px;
+        cursor: pointer;
+        
+    }
+     
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        margin: 0 1rem;
+        top: 25px;
+        right: 0;
+    }
+
+    .nav-toggle img{
+        width: 25px;
+    }
+    
+    .close,
+    input[type='checkbox']{
+        display: none;
+    }
+    
+    #nav-checkbox:Checked ~ .nav-menu{
+        background: #cc0000;
+        margin-top: 10px;
+        padding: 10px 0;
+        border-top: 1px solid #fff;
+    }
+    
+    .nav-menu li{
+       display: none;
+       margin: 10px 0;
+    }
+    
+    #nav-checkbox:checked ~ ul.nav-menu li{
+        display: block;
+    }
+
+    #nav-checkbox:checked ~ label.nav-toggle .open{
+        display: none;
+    }
+    
+    #nav-checkbox:checked ~ label.nav-toggle .close{
+        display: block;
+    }
+
+    .hero h1{
+        font-size: 46px;
+    }
+    
+    .hero h3{
+        font-size: 22px;
+    }
+    
+}
+
+
+button{
+    color: #fff;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #415aca;
+    padding: 50px 0;
+}
+
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #cecdcd;
+   padding-left: 10px;
+}
+
+.footer-col .medias-sociais{
+    margin-top: 30px;
+}
+
+.footer-col .medias-sociais a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.5s ease;
+}
+
+.footer-col .medias-sociais a i{
+    font-size: 50px;
+}
+
+.footer-col .medias-sociais a:hover{
+    color: #415aca;
+    background-color: white;
+}
+
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #415aca;
+}
+
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #415aca;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;
+}
+
+/* responsivo */
+@media (max-width:800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}

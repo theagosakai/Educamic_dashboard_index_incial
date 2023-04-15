@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Inter:wght@300&family=Open+Sans&family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(253, 253, 253), rgb(255, 255, 255));
+}
+
+#nav-checkbox, .nav-toggle{
+    display: none;
+}
+
+.img-logo{
+    width: 30%;
+    display: flex;
+    margin-right: 50px;
+    margin-top: -50px;
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5.8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #111111;
+    z-index: 2;
+ }
+ 
+ 
+ .logo h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.img-logo{
+    width: 18%;
+    display: flex;
+    margin-right: 38%;
+    margin-top: 0%
+}
+
+ 
+.nav-menu li{
+    display: inline-block;
+}
+
+.nav-menu li a{
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.5rem;
+   padding: 0 15px;
+   margin-top: 50px;
+   display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ height: 10px;
+ width: 20px;
+ margin: 0 95px 5px 0;
+ text-decoration: none;
+ transition: all 0.5s ease;
+}
+ 
+.nav-menu li a:hover{
+    color: #2e65fa;
+   
+}
+
+.active{
+   background: #111111;
+}
+
+.active a:hover{
+   color: #fff !important;
+}
+
+@media only screen and (max-width: 600px){
+   header{
+      display: block;
+   }
+
+   .logo{
+       margin-left: 50px;
+       width: 100px;
+       cursor: pointer;
+       display: flex;
+       
+   }
+    
+   .nav-toggle {
+       display: block;
+       position: absolute;
+       cursor: pointer;
+       margin: 0 1rem;
+       top: 25px;
+       right: 0;
+   }
+
+   .nav-toggle img{
+       width: 25px;
+   }
+   
+   .close,
+   input[type='checkbox']{
+       display: none;
+   }
+   
+   #nav-checkbox:Checked ~ .nav-menu{
+       background: #000000;
+       margin-top: 10px;
+       padding: 10px 0;
+       border-top: 1px solid #fff;
+   }
+   
+   .nav-menu li{
+      display: none;
+      margin: 10px 0;
+   }
+   
+   #nav-checkbox:checked ~ ul.nav-menu li{
+       display: block;
+   }
+
+   #nav-checkbox:checked ~ label.nav-toggle .open{
+       display: none;
+   }
+   
+   #nav-checkbox:checked ~ label.nav-toggle .close{
+       display: block;
+   }
+
+   .hero h1{
+       font-size: 46px;
+   }
+   
+   .hero h3{
+       font-size: 22px;
+   }
+   
+}
+
+.container {
+    width: 70%;
+    height: 75vh;
+    display: flex;
+    margin-left: 255px;
+    margin-top: 170px;
+   border-radius: 10px;
+}
+
+.form-image {
+    width: 43%;
+    display: flex;
+    margin-left: -10%;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem;
+    
+}
+
+.form-image img {
+    width: 45rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 4rem;
+    border-radius: 7px;
+  
+}
+
+.title{
+margin-right: 435px;
+font-size: 180% ;
+margin-top: -10%;
+display: flex;
+font-family: 'Dosis', sans-serif;
+}
+
+.title1{
+    margin-right: 168px;
+    font-size: 180% ;
+    margin-top: -67.3%;
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+}
+
+.h1{
+    display: flex;
+    }
+
+.form-header {
+    margin-bottom: 18rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 20rem;
+    height: 0.4rem;
+    background-color: #A40FFF;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 2px;
+}
+
+.input-group1 {
+   
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 8rem 0;
+    margin-top: -30%;
+    font-family: 'Inter', sans-serif;
+}
+
+.input-group2 {
+   margin-left: 70%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -105.1%;
+    font-family: 'Inter', sans-serif;
+}
+
+.input-group {
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-left: -9.2%;
+}
+
+
+.input-box1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box1 input {
+    
+    margin: 0.8rem 0;
+    padding: 0.7rem 2.0rem;
+    border: none;
+    border-radius: 0px;
+    background-color: #D9D9D9;
+    font-size: 1.2rem;
+}
+
+.input-box1 input:hover {
+    background-color: #D9D9D9;
+}
+
+.input-box1 input:focus-visible {
+    outline: 1px solid #D9D9D9;
+}
+
+.input-box1 label,
+.gender-title h6 {
+    font-size: 1.20rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box1 input::placeholder {
+    color: #8A8A8A;
+}
+
+.input-box2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box2 input {
+    margin: 0.8rem 0;
+    padding: 0.7rem 0.1rem;
+    border: none;
+    border-radius: 0px;
+    background-color: #D9D9D9;
+    font-size: 1.2rem;
+}
+
+.input-box2 input:hover {
+    background-color: #D9D9D9;
+}
+
+.input-box2 input:focus-visible {
+    outline: 1px solid #7100cef1;
+}
+
+.input-box2 label,
+.gender-title h6 {
+    font-size: 1.20rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box2 input::placeholder {
+    color: #8A8A8A;
+}
+
+button  {
+    margin-top: -22%;
+    margin-left: 73%;
+    width: 31.5%;
+    border: none;
+    background-color: #A40FFF;
+    padding: 0.7rem;
+    border-radius: 0px;
+    cursor: pointer;
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+    
+}
+
+button :hover {
+    background-color: #7d00e4f1;
+    padding: 0.7rem;
+    
+}
+
+button a {
+    text-decoration: none;
+    font-size: 1.60rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+        
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+        
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
